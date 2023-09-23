@@ -1,12 +1,14 @@
+import { Button, WrapButtons } from "./Buttons.styled";
+
 const Buttons = ({ keys, onClickButton }) => {
   return (
-    <div>
+    <WrapButtons>
     {keys.map(key => (
-    <button key={key} type="button" onClick={() => onClickButton(key)}>
+    <Button key={key} type="button" onClick={() => onClickButton(key)}>
       {key}
-    </button>
+    </Button>
   ))}
-    </div>
+    </WrapButtons>
   ) 
 };
 

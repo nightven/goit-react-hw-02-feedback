@@ -1,15 +1,17 @@
+import { Blue, Green, List, Orange, Red, Wrapper, } from "./Statistics.styled";
+
 const Statistics = ({good, neutral, bad, total, positivePercentage})=>{
     return(
-        <>
+        <Wrapper>
          <h2>Statistics</h2>
-        <ul>
-            <li> <p>Good: {good}</p></li>
-            <li><p>Neutral: {neutral}</p></li>
-            <li> <p>Bad: {bad}</p></li>
-            <li><p>Total: {total}</p></li>
-            <li><p>Positive feedback: {positivePercentage} %</p></li>
-        </ul>
-        </>
+        <List>
+            <li> <Green>Good: {good}</Green></li>
+            <li> <Orange>Neutral: {neutral}</Orange></li>
+            <li> <Red>Bad: {bad}</Red></li>
+            <li> <Blue>Total: {total}</Blue></li>
+            <li> <Green>Positive feedback: {positivePercentage} %</Green></li>
+        </List>
+        </Wrapper>
     );
 };
 

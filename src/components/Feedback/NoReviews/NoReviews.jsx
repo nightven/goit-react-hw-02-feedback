@@ -1,4 +1,6 @@
+import { Paragraph } from "./NoReviewes.styled";
+
 const NoReviews = ({text})=>{
-    return(<p>{text}</p>)  
+    return(<Paragraph>{text}</Paragraph>)  
 }
 export default NoReviews;
